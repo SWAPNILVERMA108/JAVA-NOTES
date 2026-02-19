@@ -1,0 +1,178 @@
+import javax.print.attribute.standard.OrientationRequested;
+
+public class practice_set_6 {
+    public static void main(String[] args){
+
+        // question no 1
+
+//        float [] num = {98.5f, 97.5f, 85.5f, 92.6f, 96.9f};
+//        float sum = 0;
+//        for (float element : num){
+//            sum = sum + element;
+//        }
+//        System.out.println("the value of sum is "+ sum);
+
+
+        //  question no 2
+
+//        int [] num = {97, 96, 86, 89, 90} ;
+//        int no = 96;
+//        boolean isInArray = false;
+//
+//        for(int element : num){
+//            if(no == element){
+//                isInArray = true;
+//                break;
+//            }
+//        }
+//        if(isInArray){
+//            System.out.println("The value is present in the array");;
+//        }
+//        else {
+//            System.out.println("The value is not present in the array");
+//        }
+
+        // question 3
+
+//        float marks [] = {89, 83, 81, 89, 99, 56, 67};
+//                float sum = 0;
+//        for (int i = 0;i<marks.length;i++){
+//            sum = sum + marks[i];
+//        }
+//        float avg = sum/marks.length;
+//        System.out.println("avg of physics marks : ");
+//        System.out.println(avg);
+
+
+//        for (float element : marks){
+//            sum  = sum + element;
+//        }
+//        float avg = sum/marks.length;
+//        System.out.println("avg of physics marks : ");
+//        System.out.println(avg);
+
+
+        //  Practice question
+
+//        int matrix [][];
+//        matrix = new int [2][3];
+//        matrix[0][0] = 11;
+//        matrix[0][1] = 12;
+//        matrix[0][2] = 13;
+//        matrix[1][0] = 21;
+//        matrix[1][1] = 22;
+//        matrix[1][2] = 23;
+//
+//        for(int i = 0; i<matrix.length; i++){
+//            for(int j = 0; j<matrix[i].length; j++ ){
+//                System.out.print(matrix[i][j]);
+//                System.out.print(" ");
+//            }
+//            System.out.println("\n");
+//        }
+
+
+        // question no 4
+
+//        int [][] mat1 = {{1,2,3},
+//                        {4,5,6}};
+//
+//        int [][] mat2 = {{2,6,13},
+//                        {3,7,1}};
+//
+//        int [][] result = {{0,0,0},
+//                          {0,0,0}};
+//
+//        for (int i=0;i<mat1.length;i++) {
+//            for (int j = 0; j < mat1[i].length; j++) {
+//                System.out.format("setting value for i=%d and j=%d\n", i, j);
+//            }
+//        }
+//
+//        for (int i=0;i<mat1.length;i++){
+//            for (int j=0;j<mat1[i].length;j++){
+//                result[i][j] = mat1[i][j] + mat2[i][j];
+//                System.out.print(result[i][j]+" ");
+//
+//            }
+//            System.out.println("");
+//        }
+
+
+
+
+        //   question no 5
+
+//        int [] marks = {2,4,5,6,9,11,56};
+//        for (int i= (marks.length - 1); i>=0; i--){
+//            System.out.println(marks[i]);
+//        }
+
+
+        //  OR { swapping of array }
+
+//        int [] arr = {1,2,3,4,5,6,7};
+//        int l = arr.length;
+//        int n = Math.floorDiv(l,2);
+//        int temp;
+//
+//        for(int i=0;i<n;i++){
+//            // swap a[i] and a[l-1-i]
+//            // a   b   temp
+//            temp = arr[i];
+//            arr[i]= arr[l-1-i];
+//            arr[l-1-i] = temp;
+//
+//        }
+//        for (int element:arr){
+//            System.out.print(element + " ");
+//        }
+
+
+        //  question no 6
+        //  for min value = Integer.MIN_VALUE
+        //  for max value = Integer.MAX_VALUE
+
+//        int [] arr = {3,6,89,90, 97,34, 56, 90,88};
+//        int max = 0;
+//        for (int e : arr){
+//            if(e>max){
+//                max = e;
+//
+//            }
+//        }
+//        System.out.println("the value of the maximam element in this array is: "+ max);
+
+
+//      question no 7
+
+//        int [] arr = {3,6,89,90, 97,34, 56, 90,88};
+//        int min = Integer.MAX_VALUE;
+//        for (int e : arr){
+//            if (e<min){
+//                min = e;
+//            }
+//        }
+//        System.out.println(min);
+//
+
+        //   question no 8
+
+        int [] arr = {3,6,89,90, 97,34, 56, 90,88};
+        boolean isShorted = true;
+        for (int i=0;i<arr.length-1;i++){
+            if (arr[i]>arr[i+1]){
+                isShorted = false;
+                break;
+            }
+        }
+        if (isShorted){
+            System.out.println("array is shorted");
+        }
+        else {
+            System.out.println("array is not shorted");
+        }
+
+
+    }
+}
